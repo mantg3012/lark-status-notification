@@ -1,0 +1,7 @@
+LARK_APP_ID=
+LARK_APP_SECRET=
+LARK_ENCRYPT_KEY=
+LARK_VERIFICATION_TOKEN=
+# dùng cho scripts; wrangler dev cũng đọc file này
+LARK_DOMAIN="https://open.larksuite.com"
+APPROVAL_MAPPING='{"72FA0E8B-4446-4E4B-8D05-66F151CE604C":{"statusTitle":"Remote","startField":"widget17804706081600001","endField":"widget17804706081600001"},"72A5FBFF-7F4C-4233-A0E5-E421E1E6276D":{"statusTitle":"Off","startField":"widgetLeaveGroupV2","endField":"widgetLeaveGroupV2"}}'

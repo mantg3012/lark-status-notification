@@ -1,0 +1,22 @@
+name = "lark-status-sync"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[triggers]
+crons = ["0 1 * * *"]   # 8:00 Asia/Ho_Chi_Minh
+
+[vars]
+LARK_DOMAIN = "https://open.larksuite.com"
+TIMEZONE = "Asia/Ho_Chi_Minh"
+SCAN_LOOKBACK_DAYS = "60"
+# approval_code → cấu hình
+APPROVAL_MAPPING = '''
+{
+  "72FA0E8B-4446-4E4B-8D05-66F151CE604C": { "statusTitle": "Remote", "startField": "widget17804706081600001", "endField": "widget17804706081600001" },
+  "72A5FBFF-7F4C-4233-A0E5-E421E1E6276D": { "statusTitle": "Off", "startField": "widgetLeaveGroupV2", "endField": "widgetLeaveGroupV2" }
+}
+'''
+
+[[kv_namespaces]]
+binding = "SCHEDULE"
+id = "4e9166fa70fe4ec384b9cb1e6ff7c5ef"
